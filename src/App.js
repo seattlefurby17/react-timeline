@@ -4,6 +4,7 @@ import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
+// const events = 
 function App() {
   console.log(timelineData);
 
@@ -14,6 +15,7 @@ function App() {
         <h1 className="App-title">Application title</h1>
       </header>
       <main className="App-main">
+        <Timeline events={timelineData.events} />
       </main>
     </div>
   );
