@@ -10,8 +10,8 @@ const TimelineEvent = (props) => {
         {props.status}
       </span>
       <span className='eventTime'>
-        {props.timestamp}
-        </span>
+        <Timestamp time={props.timeStamp}/>
+      </span>
     </div>
   );
 };
