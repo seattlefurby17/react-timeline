@@ -4,7 +4,7 @@ import './App.css';
 import timelineData from './data/timeline.json';
 import Timeline from './components/Timeline';
 
-const eventData = timelineData
+// const eventData = timelineData
 
 function App() {
   console.log(timelineData);
@@ -13,10 +13,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 className="App-title">{eventData.person}'s Timeline</h1>
+        <h1 className="App-title">{timelineData.person}'s Timeline</h1>
       </header>
       <main className="App-main">
-        <Timeline events={eventData.events} />
+        <Timeline events={timelineData.events} />
       </main>
     </div>
   );
